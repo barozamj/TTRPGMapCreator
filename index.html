@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TTRPG Map Creator</title>
+    <style>
+        #map {
+            position: relative;
+            height: 700px;
+            width: 1400px;
+            border: 1px solid black;
+        }
+
+        .character {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <button id="addCharacter">Add New Character</button>
+    <div>
+        Move character #<input id="characterId" type="number" min="1" value="1">
+        to space [<input id="xCoordinate" type="number" min="1" value="1">, 
+        <input id="yCoordinate" type="number" min="1" value="1">]
+        <button id="moveCharacter">Move Character</button>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
